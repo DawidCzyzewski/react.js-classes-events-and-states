@@ -23,8 +23,8 @@ class MyComponent extends Component {
 
   // In enter I can add files or check for example props
   render() {
-    console.log("Render of class, this.props: ", this.props);
-    console.log("Render of class, this: ", this);
+    // console.log("Render of class, this.props: ", this.props);
+    // console.log("Render of class, this: ", this);
     return (
       <div>
         This is my first Class Component! Bravo, {this.name} with age {this.age}
@@ -37,7 +37,9 @@ function App() {
   return (
     <>
       <MyComponent element="Added in function App" />
-      <Counter />
+      <Counter step={5} />
+      <Counter step={3} />
+
     </>
   );
 }
