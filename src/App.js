@@ -2,6 +2,7 @@ import logo from "./logo.svg";
 import "./App.css";
 import { Component } from "react";
 import Counter from "./Components/Counter";
+import Toggle from "./Components/Toggle";
 
 class MyComponent extends Component {
   name = "Dawid";
@@ -34,12 +35,24 @@ class MyComponent extends Component {
 }
 
 function App() {
+  // const currentState = { name: "Tom", age: 15 };
+  // const updateSomeState = { firstName: "Bob", age: 30 };
+  // const finalState = {
+  //   ...currentState,
+  //   ...updateSomeState,
+  // };
+
   return (
     <>
       <MyComponent element="Added in function App" />
       <Counter step={5} />
       <Counter step={3} />
-
+      <Counter step={3} initialValue={10} />
+      {/* <Toggle />
+      <Toggle>
+        <div>It is open in App!</div>
+      </Toggle> */}
+      {/* <Toggle>test</Toggle> */}
     </>
   );
 }
